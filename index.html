@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#111729",
+              secondary: "#677489",
+            },
+            fontFamily: {
+              lato: ["Lato", "sans-serif"],
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <title>Document</title>
+  </head>
+  <body class="h-screen w-screen bg-[#F2F5F9] flex items-center justify-center">
+    <div class="max-w-[390px] relative">
+      <div class="relative">
+        <img src="./hero-image-business-card.png" alt="hero-image-business-card" class="rounded-t-xl">
+        <img src="./white-overlay.svg" alt="" class="absolute z-10 bottom-0">
+      </div>
+      <div class="bg-white rounded-b-xl absolute top-[calc(100%-2px)]">
+        <div class="p-6 pt-0">
+          <h1 class="text-primary font-poppins text-2xl font-semibold">Perfect solution for small business</h1>
+          <p class="font-lato text-secondary text-base mt-3">Small businesses need to generate leads to grow. You can use tools like Ringy.</p>
+        </div>
+        <div class="w-full h-[1px] bg-[#F2F5F9]"></div>
+        <div class="p-6 flex items-center space-x-3">
+          <img src="./avatar-image-business-card.png" alt="avatar-image-business-card" class="w-10 h-10 rounded-full border-4 border-[#F2F5F9]">
+          <div class="">
+            <h3 class="font-lato text-primary font-semibold leading-none">Amy Burgess</h3>
+            <p class="text-secondary text-xs">Customer Manger, Solution Oy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
